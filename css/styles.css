@@ -5,11 +5,11 @@ body{
 }
 #navbar{
     display: inline-block;
-    background-color: darkblue;
+    background-color: black;
     width: 100vw;
     font-size: 2em;
 }
-#site_name{
+#site_logo{
     float: left;
     color: #fff;
 }
@@ -19,6 +19,8 @@ body{
 #nav_links a{
     text-decoration: none;
     color: lightblue;
+    padding: 3%;
+    border: 2px solid #fff;
 }
 main{
     height: 100vh;
@@ -33,14 +35,14 @@ section h1{
     margin: auto;
 }
 #home{
-    background-color: red;
+    background-color: darkred;
 }
 #bio{
-    background-color: yellow;
+    background-color: darkorange;
 }
 #media{
-    background-color: green;
+    background-color: darkgreen;
 }
 #contact{
-    background-color: blue;
+    background-color: darkblue;
 }
