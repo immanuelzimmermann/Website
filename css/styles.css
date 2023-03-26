@@ -1,24 +1,46 @@
 body{
     font-family: sans-serif;
     font-size: 100%;
+    background-color: #000;
 }
 #navbar{
-    background-color: yellow;
-    position: fixed;
+    display: inline-block;
+    background-color: darkblue;
     width: 100vw;
-    top: 0;
     font-size: 2em;
 }
-a{
-    text-decoration: none;
-    color: #000;
+#site_name{
+    float: left;
+    color: #fff;
 }
-section{
+#nav_links{
+    float: right;
+}
+#nav_links a{
+    text-decoration: none;
+    color: lightblue;
+}
+main{
     height: 100vh;
 }
+section{
+    display: flex;
+    float: left;
+    width: 100vw;
+    height: 25vh;
+}
+section h1{
+    margin: auto;
+}
+#home{
+    background-color: red;
+}
 #bio{
-    background-color: lightpink;
+    background-color: yellow;
+}
+#media{
+    background-color: green;
 }
 #contact{
-    background-color: lightgray;
+    background-color: blue;
 }
