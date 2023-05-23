@@ -3,39 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Website</title>
+    <script src="./js/main.js"></script>
+    <title>WEB DESIGN</title>
 </head>
 <body>
     <header>
-        <nav id="navbar">
-            <div id="site_logo">Logo</div>
-            <div id="nav_links">
-                <a id="nav_home" href="#home">Home</a>
-                <a id="nav_bio" href="#bio">Bio</a>
-                <a id="nav_media" href="#media">Media</a>
-                <a id="nav_contact" href="#contact">Contact</a>
-            </div>
-        </nav>
+        <div class="topnav" id="myTopnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction();">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home">Home</a>
+            <a href="#info">Info</a>
+            <a href="#media">Media</a>
+            <a href="#contact">Contact</a>
+        </div>
     </header>
     <main>
-        <section id="home">
-            <h1>Home</h1>
-        </section>
-        <section id="bio">
-            <h1>Bio</h1>
-        </section>
-        <section id="media">
-            <h1>Media</h1>
-        </section>
-        <section id="contact">
-            <h1>Contact</h1>
-        </section>
+        <div id="main_content">
+            <section id="home">
+                <div class="layer">
+                    <h1 class="name_title">Web Design</h1>
+                </div>
+            </section>
+            <section id="info" class="content">
+                <h2 class="sectionTitle">Info</h2>
+                <p class="sectionContent">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vestibulum auctor diam in magna aliquet, varius posuere velit elementum.
+                    Duis metus massa, sollicitudin at mi quis, feugiat dapibus metus.
+                    Praesent pulvinar ultrices lorem, eget efficitur felis mattis vel.
+                    <br><br>
+                    Ut aliquam, tellus eleifend sodales tristique, velit leo elementum nunc,
+                    sed luctus ipsum tortor sed augue. Pellentesque ut leo purus.
+                    Aliquam pulvinar, neque ut porttitor vulputate, tellus metus porttitor metus,
+                    non facilisis sapien metus in diam. Pellentesque ac ipsum vel nunc viverra rutrum.
+                    <br><br>
+                    In lobortis ultricies mi, a efficitur ante ullamcorper nec. In neque arcu, ornare vel efficitur sed,
+                    vehicula ac ipsum. Maecenas malesuada, tortor ut egestas finibus, enim magna molestie nisi,
+                    vitae mollis nisl metus ac magna. Maecenas ornare finibus magna eget egestas. Fusce sed orci ex.
+                    Cras aliquam faucibus enim cursus feugiat. Nunc euismod volutpat velit non posuere. Proin risus est,
+                    faucibus interdum magna vel, pellentesque posuere tortor.
+                </p>
+            </section>
+            <section id="media" class="content">
+                <h2 class="sectionTitle">Media</h2>
+                <div class="sectionContent videoContent">
+                    <iframe src="https://www.youtube.com/embed/mdoZdXBpYzU"></iframe>
+                    <iframe src="https://www.youtube.com/embed/rLrQvNGE9UQ"></iframe>
+                    <iframe src="https://www.youtube.com/embed/JlRwT-qly94"></iframe>
+                    <iframe src="https://www.youtube.com/embed/NwyaiOHW9NU"></iframe>
+                </div>
+            </section>
+            <section id="contact" class="content">
+                <h2 class="sectionTitle">Contact</h2>
+                <div id="contactContent">
+                    <form id="contactForm">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea rows="10" placeholder="Text" required></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                    <div id="contactInfo">
+                        <div id="contactText">
+                            <span>Phone Number<br>
+                                <a href="tel:+972548077480">+972123456789</a>
+                            </span>
+                            <br><br>
+                            <!-- Email muss noch geklärt werden -->
+                            <span>Email<br>
+                                <a href="mailto:info@email.com">info@email.com</a>
+                            </span>
+                            <br><br>
+                            <span>Location<br>
+                                Israel, Central District
+                            </span>
+                            <br><br>
+                        </div>
+                        <div id="socialIcons">
+                            <img src="./img/square-whatsapp.svg">
+                            <img src="./img/square-facebook.svg">
+                            <img src="./img/square-youtube.svg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
-    <footer>
-        <!-- Copyright -->
-        <!-- Social Media Links -->
-    </footer>
 </body>
 </html>
